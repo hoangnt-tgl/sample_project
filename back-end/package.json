@@ -9,7 +9,8 @@
   },
   "main": "index.ts",
   "scripts": {
-    "start": "nodemon src/index.ts",
+    "start": "node dist/index.js",
+    "dev": "nodemon src/index.ts",
     "clean": "rimraf dist tsconfig.schema.json tsconfig.schemastore-schema.json tsconfig.tsbuildinfo tests/ts-node-packed.tgz",
     "rebuild": "npm run clean && npm run build",
     "build": "tsc --build",
