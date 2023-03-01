@@ -2,7 +2,6 @@ import dotenv from "dotenv";
 dotenv.config();
 //use the cookie-parser
 import cookieParser from "cookie-parser";
-
 import { connectDB } from "./config/db.config";
 import * as path from "path";
 import logger from "morgan";
@@ -20,7 +19,6 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 const server = http.createServer(app);
-
 
 export const runningApp = async () => {
   await connectDB();
